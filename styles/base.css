@@ -1,0 +1,68 @@
+header span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: brown;
+    color: whitesmoke;
+    padding: 25px 25px;
+}
+nav {
+    display: flex;
+    background-color: wheat;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 50px;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: red;
+}
+main {
+    width: 75%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+}
+main h1 {
+    grid-area: 1 / 1 / span 1 / span 2;
+    justify-self: center;
+}
+section.card {
+    border: 3px solid black;
+    margin: 5px;
+    border-radius: 10px;;
+}
+section.card h2 {
+    background-color: chocolate;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: whitesmoke;
+}
+div.about-me {
+    display: flex;
+    margin: 10px;
+}
+section.card h3 {
+    border-bottom: 1px solid black;
+    justify-self: center;
+    width: 300px;
+    text-align: center;
+}
+img.flag {
+    width: 100px;
+    margin: 15px;
+}
+footer{
+    justify-content: center;
+    text-align: center;
+    background-color: brown;
+    color: whitesmoke;
+    padding: 10px;
+}
