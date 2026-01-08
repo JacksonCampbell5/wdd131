@@ -1,9 +1,9 @@
 header {
-    background-color: brown;
+    text-align: center;
 }
 header span {
     display: block;
-    text-align: center;
+    background-color: brown;
     width: 100%;
     color: whitesmoke;
     padding: 25px 25px;
@@ -42,7 +42,7 @@ section.card {
     border-radius: 10px;;
 }
 section.card h2 {
-    background-color: chocolate;
+    background-color: rgb(175, 77, 6);
     width: 100%;
     margin: 0;
     text-align: center;
