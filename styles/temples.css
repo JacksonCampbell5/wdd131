@@ -20,7 +20,7 @@ header {
 #menu.open::before {
 	content: "❌";
 }
-.navigation{
+nav {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -42,7 +42,7 @@ nav a:hover {
     color: red;
     background-color: darkcyan;
 }
-header h1 {
+header h2 {
     padding: 10px;
     text-wrap-mode: nowrap;
 }
