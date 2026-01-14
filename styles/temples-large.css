@@ -1,0 +1,24 @@
+@media screen and (min-width: 800px){
+    #menu {
+        display: none;
+    }
+    .navigation a{
+        display: block;
+        background-color: wheat;
+        border: 0;
+    }
+    .navigation{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    main{
+        max-width: 100%;
+    }
+    main div {
+        flex-direction: row;
+    }
+    nav a:hover {
+    color: red;
+    background-color: wheat;
+}
+}    
