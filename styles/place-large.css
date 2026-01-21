@@ -22,9 +22,15 @@
     h2{
         background-color: blue;
     }
-    h3::selection {
+    h3::after {
         color: red;
         background: yellow;
-}
+    }  
+    h3 {
+        display: inline;
+    }
+    #weather-icon{
+        display: none;
+    }
 }    
 

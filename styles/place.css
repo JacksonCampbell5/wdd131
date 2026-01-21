@@ -50,7 +50,12 @@ dd {
 }
 h3 {
     font-size: 75px;
+    display: none;
 }
 p {
     display: inline;
+}
+#weather-icon {
+    width: 100px;
+    height: auto;
 }
