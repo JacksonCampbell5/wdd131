@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="A webcite containing the information for my W03 Assignment: Country Page">
+    <meta name="author" content="Jackson Campbell">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>United States</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+            <img src="images/hero-small.webp" alt="flag + fireworks">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>9.83 million km²</dd>
+                <dt>Population:</dt>
+                <dd>348mil</dd>
+                <dt>Languages:</dt>
+                <dd>English</dd>
+                <dt>Currency:</dt>
+                <dd>USD</dt>
+                <dt>Time Zone:</dt>
+                <dd>-4UCT - -8UCT</dd>
+                <dt>Calling Code:</dt>
+                <dd>+1</dd>
+                <dt>Internet TLD:</dt>
+                <dd>.us</dd>
+            </dl>
+        </section> 
+        <section class="weather">
+            <h2>Weather</h2>
+            <h3>⛅</h3>
+            <dl>
+                <dt>Temperature:</dt>
+                <dd><p id="temp">9</p><p>°C</p></dd>
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
+                <dt>Wind:</dt>
+                <dd><p id="wind">5</p><p> km/h</p></dd>
+                <dt>Wind Chill:</dt>
+                <dd><p id="chill">18</p>°C<p></p></dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Jackson Campbell | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

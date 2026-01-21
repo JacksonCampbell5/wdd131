@@ -1,0 +1,56 @@
+:root {
+  --secondary-bg-color: rgb(150, 4, 4);
+  --priamry-text-color: white;
+  --primary-bg-color: blue;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    border-bottom: 15px solid var(--primary-bg-color);
+}
+header, footer{
+    background-color: var(--secondary-bg-color);
+    color: var(--priamry-text-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+main{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+picture{
+    width: 380px;
+    height: auto;
+    border-bottom: 10px solid var(--secondary-bg-color);
+    background-color: black;
+}
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+}
+h2{
+    padding: 15px;
+}
+dt {
+    text-align: right;
+}
+dd {
+    text-align: left;
+    margin: 5px;
+}
+h3 {
+    font-size: 75px;
+}
+p {
+    display: inline;
+}

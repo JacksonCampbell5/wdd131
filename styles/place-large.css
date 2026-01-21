@@ -1,0 +1,30 @@
+@media screen and (min-width: 1000px){
+    main{
+    position: relative;
+    border: 1px black solid;
+    width: 1000px;
+    justify-self: center;
+    }
+    .data{
+        position: absolute;
+        left: 2%;
+        top: 5%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .weather {
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    h2{
+        background-color: blue;
+    }
+    h3::selection {
+        color: red;
+        background: yellow;
+}
+}    
+
