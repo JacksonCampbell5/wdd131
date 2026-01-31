@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A webcite containing pictures of the temple for my W02 Assignment: Picture Album">
+    <meta name="author" content="Jackson Campbell">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <button id="menu" title="menu"></button>
+        <nav class="navigation">
+            <a id="home">Home</a>
+            <a id="old">Old</a>
+            <a id="new">New</a>
+            <a id="large">Large</a>
+            <a id="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id = "filtered-temple-list">
+        </div>
+    </main>
+     <footer>
+        <p><span id="currentyear"></span> | Jackson Campbell | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
