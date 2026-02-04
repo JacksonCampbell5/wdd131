@@ -1,0 +1,37 @@
+:root {
+    --primary-bg-colour: #80ff80;
+    --secondary-bg-colour: #1a1f24;
+    --primary-text-colour: #000000;
+    --secondary-text-colour: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: var(--secondary-bg-colour);
+    color: var(--secondary-text-colour);
+    height: 100px;
+}
+main {
+    background-color: var(--primary-bg-colour);
+    color: var(--primary-text-colour);
+}
+
+h1, h2, h3 {
+    font-family: "Press Start 2P";
+    padding: 20px;
+}
+p {
+    padding: 20px;
+}
+img{
+    border: 1px solid black;
+}
+.wireframe {
+    display:grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+}
