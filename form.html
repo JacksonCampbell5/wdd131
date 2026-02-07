@@ -7,6 +7,7 @@
     <meta name="description" content="Jackson Campbell webpage for WDD 131 – week 05 form assignment">
     <meta name="author" content="Jackson Campbell">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/form.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,33 +19,33 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form method="get" action="thanks.html">
-            <label>Product Name*
+        <form method="get" action="review.html">
+            <label for="product-list">Product Name*
                 <select name="product-list" id="product-list" required>
-                    <option value="" disabled selected>Please Select</option>
+                    <option value="" disabled selected>Select a Product ...</option>
                 </select>
             </label>
 
             <div>Overall Rating*</div>
             <div class="radio">
-                <label>☆<input type="radio" name="rating" value="1star" required></label>
-                <label>☆☆<input type="radio" name="rating" value="2star" required></label>
-                <label>☆☆☆<input type="radio" name="rating" value="3star" required></label>
-                <label>☆☆☆☆<input type="radio" name="rating" value="4star" required></label>
-                <label>☆☆☆☆☆<input type="radio" name="rating" value="5star" required></label>
+                <label for="rating">☆<input type="radio" name="rating" value="1star" id="1star" required></label>
+                <label for="rating">☆☆<input type="radio" name="rating" value="2star" id="2star" required></label>
+                <label for="rating">☆☆☆<input type="radio" name="rating" value="3star" id="3star" required></label>
+                <label for="rating">☆☆☆☆<input type="radio" name="rating" value="4star" id="4star" required></label>
+                <label for="rating">☆☆☆☆☆<input type="radio" name="rating" value="5star" id="5star" required></label>
             </div>
             
 
-            <label>Date of Installation<input type="date" name="installationDate"required></label>
+            <label for="installation-date">Date of Installation<input id="installation-date" type="date" name="installation-date"required></label>
             <div>Which Features did you find useful in this product?</div>
             <p>(Check all that apply)</p>
-            <label><input type="checkbox" id="durability" name="durability" value="durability" >Durability</label>
-            <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">Ease of Use</label>
-            <label><input type="checkbox" id="performance" name="performance" value="performance">Performance</label>
-            <label><input type="checkbox" is="design" name="design" value="design">Design</label>
-            <label>Written Review (Optional)<textarea id="review" name="review"></textarea></label>
+            <label for="durability"><input type="checkbox" id="durability" name="durability" value="durability" >Durability</label>
+            <label for="ease-of-use"><input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">Ease of Use</label>
+            <label for="performance"><input type="checkbox" id="performance" name="performance" value="performance">Performance</label>
+            <label for="design"><input type="checkbox" is="design" name="design" value="design">Design</label>
+            <label for="review">Written Review (Optional)<textarea id="review" name="review"></textarea></label>
             <div></div>
-            <label>Your Name (Optional)<input type="text" id="name" name="name"></label>
+            <label for="name">Your Name (Optional)<input type="text" id="name" name="name"></label>
             <div></div>
             <input type="submit" id="submit" value="Post review">
         </form>
@@ -54,3 +55,4 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+</html>
