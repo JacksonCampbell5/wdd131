@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Form assignment – Jackson Campbell</title>
+    <meta name="description" content="Jackson Campbell webpage for WDD 131 – week 05 form assignment">
+    <meta name="author" content="Jackson Campbell">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="thanks.html">
+            <label>Product Name*
+                <select name="product-list" id="product-list" required>
+                    <option value="" disabled selected>Please Select</option>
+                </select>
+            </label>
+
+            <div>Overall Rating*</div>
+            <div class="radio">
+                <label>☆<input type="radio" name="rating" value="1star" required></label>
+                <label>☆☆<input type="radio" name="rating" value="2star" required></label>
+                <label>☆☆☆<input type="radio" name="rating" value="3star" required></label>
+                <label>☆☆☆☆<input type="radio" name="rating" value="4star" required></label>
+                <label>☆☆☆☆☆<input type="radio" name="rating" value="5star" required></label>
+            </div>
+            
+
+            <label>Date of Installation<input type="date" name="installationDate"required></label>
+            <div>Which Features did you find useful in this product?</div>
+            <p>(Check all that apply)</p>
+            <label><input type="checkbox" id="durability" name="durability" value="durability" >Durability</label>
+            <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance" value="performance">Performance</label>
+            <label><input type="checkbox" is="design" name="design" value="design">Design</label>
+            <label>Written Review (Optional)<textarea id="review" name="review"></textarea></label>
+            <div></div>
+            <label>Your Name (Optional)<input type="text" id="name" name="name"></label>
+            <div></div>
+            <input type="submit" id="submit" value="Post review">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Jackson Campbell | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
