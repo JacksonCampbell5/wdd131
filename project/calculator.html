@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redstone 101 | Calculator</title>
+    <meta name="description" content="This site contains a basic calculator to desplay the ammount of items needed to craft more items.">
+    <meta name="author" content="Jackson Campbell">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="scripts/script.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.svg" alt="webpage logo" loading="lazy"></a>
+        <button name="menu" id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="items.html">Items</a>
+            <a>Tutorials</a>
+            <a href="calculator.html">Calculator</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Calculator</h1>
+        <p>The purpose of the calculator is to help you see and be able to collect all the materials you would need to craft the redstone components. Fill out the fourm below to see how much you need!</p>
+        <form action="result.html">
+            <fieldset>
+                <div></div>
+                <label >Select Item</label>
+                <label >Number of Items</label>
+            </fieldset>
+            <div id="form-list"></div>
+            <fieldset>
+                <div></div>
+                <Button type="button" id="new-item">Add Item</Button>
+                <Button type="button" id="calculate">Calculate results</Button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Jackson Campbell | Utah</p>
+        <p id="lastModified"></p>
+        <a href="references.html">references</a>
+    </footer>
+</body>
+</html>

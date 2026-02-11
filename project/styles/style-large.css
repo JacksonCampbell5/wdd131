@@ -1,0 +1,52 @@
+@media screen and (min-width: 800px){
+    #menu {
+        display: none;
+    }
+    .navigation a{
+        display: block;
+        border: 0;
+        align-items: center;
+        background-color: var(--secondary-bg-colour);
+    }
+    .navigation{
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    main{
+        max-width: 100%;
+    }
+    main div {
+        flex-direction: row;
+    }
+    nav a:hover {
+    color: red;
+    background-color: var(--secondary-bg-colour);
+    }
+    .about-img{
+        display: block;
+        width: 400px;
+        margin-right: 50px;
+    }
+   
+    header{
+        display: flex;
+        align-items: center;
+    }
+    .item-image {
+        width: 400px;
+        height: 400px;
+        justify-self: right;
+    }
+    section{
+    display: flex;
+    padding: 20px;
+    }
+    #item-list{
+        text-align: left;
+    }
+    #crafting-list{
+    grid-template-columns: 1fr 1fr;
+}
+}
+    

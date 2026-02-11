@@ -9,23 +9,29 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+a {
+    text-decoration: none;
+    color: white;
+}
 header, footer {
     background-color: var(--secondary-bg-colour);
     color: var(--secondary-text-colour);
-    height: 100px;
+    min-height: 100px;
+}
+footer{
+    text-align: center;
 }
 main {
     background-color: var(--primary-bg-colour);
     color: var(--primary-text-colour);
 }
-
 h1, h2, h3 {
     font-family: "Press Start 2P";
     padding: 20px;
 }
 p {
     padding: 20px;
+    font-size: 40px;
 }
 img{
     border: 1px solid black;
@@ -34,4 +40,86 @@ img{
     display:grid;
     grid-template-columns: auto auto;
     padding: 20px;
+}
+.logo {
+    height: 75px;
+    margin: 12.5px;
+}
+#menu {
+    position: absolute;
+    top: 12.5px;
+    right: 12.5px;
+    z-index: 1;
+    font-size: 55px;
+}
+#menu::before {
+	content: "☰";
+}
+#menu.open::before {
+	content: "❌";
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.navigation a {
+    display: none;
+    background-color: aquamarine;
+}
+.open a {
+    display: block;
+}
+nav a {
+    padding: 10px;
+    font-size: 25px;
+    border: black solid 1px;
+}
+nav a:hover {
+    color: red;
+    background-color: darkcyan;
+}
+.about-img{
+    display: none;
+}
+section{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+h1 {
+    text-align: center;
+}
+.item-image {
+        width: 200px;
+        height: 200px;
+        justify-self: right;
+        image-rendering: pixelated;
+        border: none;
+    }
+#item-list{
+    text-align: center;
+}
+fieldset{
+    display: grid;
+    grid-template-columns:  1fr 4fr 4fr;
+    width: 75%;
+    justify-self: center;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+}
+input, select, fieldset button{
+    height: 50px;
+    margin: 10px;
+}
+#crafting-list{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+.crossed{
+    text-decoration:line-through;
 }
